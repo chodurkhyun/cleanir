@@ -22,4 +22,4 @@ This is the official implementation of [CLEANIR: Controllable Attribute-Preservi
 - Keras 2.2.4 (backend=TensorFlow 1.13.0-rc0)
 
 ## Usage
-Please check CLEANIR_notebook.ipynb
+Please check [CLEANIR_notebook.ipynb](https://github.com/chodurkhyun/cleanir/blob/master/CLEANIR_notebook.ipynb)
