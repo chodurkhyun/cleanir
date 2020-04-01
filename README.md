@@ -1,6 +1,8 @@
 # CLEANIR: Controllable Attribute-Preserving Natural Identity Remover
 This is the official implementation of [CLEANIR: Controllable Attribute-Preserving Natural Identity Remover](https://www.mdpi.com/2076-3417/10/3/1120)
 
+![CLEANIR Demo](./cleanir_demo.gif)
+
 ## Requirements
 - face-recognition>=1.2.3
 - opencv-python>=4.1.0.25
