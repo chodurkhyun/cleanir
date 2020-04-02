@@ -23,3 +23,18 @@ This is the official implementation of [CLEANIR: Controllable Attribute-Preservi
 
 ## Usage
 Please check [CLEANIR_notebook.ipynb](https://github.com/chodurkhyun/cleanir/blob/master/CLEANIR_notebook.ipynb)
+
+## Citation
+If you find this work useful for your research, please consider citing our paper:
+```
+@article{cho2020cleanir,
+  title={CLEANIR: Controllable Attribute-Preserving Natural Identity Remover},
+  author={Cho, Durkhyun and Lee, Jin Han and Suh, Il Hong},
+  journal={Applied Sciences},
+  volume={10},
+  number={3},
+  pages={1120},
+  year={2020},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+```
