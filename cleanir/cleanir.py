@@ -238,18 +238,14 @@ class Cleanir:
         if with_landmark_loss:
             cleanir_net.add_loss(landmark_loss)
 
-        adam = Adam(lr=1e-4, decay=1e-6)
-        cleanir_net.compile(optimizer=adam)
-
-        cleanir_net.metrics_tensors.append(vae_losses)
-        cleanir_net.metrics_names.append('vae_loss')
-
-        cleanir_net.metrics_tensors.append(em_loss)
-        cleanir_net.metrics_names.append('em_loss')
+        cleanir_net.add_metric(vae_losses, name='vae_loss')
+        cleanir_net.add_metric(em_loss, name='em_loss')
 
         if with_landmark_loss:
-            cleanir_net.metrics_tensors.append(landmark_loss)
-            cleanir_net.metrics_names.append('landmark_loss')
+            cleanir_net.add_metric(landmark_loss, name='landmark_loss')
+
+        adam = Adam(learning_rate=1e-4, decay=1e-6)
+        cleanir_net.compile(optimizer=adam)
 
         self.__encoder = encoder
         self.__decoder = decoder
